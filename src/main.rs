@@ -16,6 +16,7 @@ fn main() -> Result<()> {
     {
         setup_panic!();
     }
+    println!("dtry was here!");
 
     // Better Panic. Only enabled *when* debugging.
     #[cfg(debug_assertions)]
