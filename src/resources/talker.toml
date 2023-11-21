@@ -19,6 +19,9 @@ automatic_topic_discovery = false
 # each section defines a ROS node name and its topic
 [[ros]]
 # action = "sub" | "pub | "noop"
+
+#NOTE: Not sure about the documentation here, per topic_manager, "sub" leads to publishing to remote topic
+
 # pub = subscribe to local topic and publish to remote topic
 # sub = publish to local topic and subscribe to remote topic
 # noop = do nothing, used to exclude certain topics in auto mode
