@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Talker",
+            "program": "${workspaceFolder}/target/debug/gdp-router",
+            "args": ["router"],
+            "cwd": "${workspaceFolder}",
+            "env": {"SGC_CONFIG": "talker.toml"}
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Listener",
+            "program": "${workspaceFolder}/target/debug/gdp-router",
+            "args": ["router"],
+            "cwd": "${workspaceFolder}",
+            "env": {"SGC_CONFIG": "listener.toml"}
+        }
+    ]
+}
